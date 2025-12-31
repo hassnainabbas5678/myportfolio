@@ -6,32 +6,32 @@ const webProjects = [
     title: "Software House Website",
     description:
       "Software house website built using html, css, javascript, and bootstrap",
-    image: "/web-1.webp",
+    image: "web/web-1.webp",
   },
   {
     title: "Portfolio Website",
     description: "Responsive landing page for a startup.",
-    image: "/web-2.webp",
+    image: "web/web-2.webp",
   },
   {
     title: "Dashboard Application",
     description: "Admin dashboard with authentication and charts.",
-    image: "/web-3.webp",
+    image: "web/web-3.webp",
   },
   {
     title: "Dashboard Application",
     description: "Admin dashboard with authentication and charts.",
-    image: "/web-4.webp",
+    image: "web/web-4.webp",
   },
   {
     title: "Dashboard Application",
     description: "Admin dashboard with authentication and charts.",
-    image: "/web-5.webp",
+    image: "web/web-5.webp",
   },
   {
     title: "NGO Website",
     description: "Admin dashboard with authentication and charts.",
-    image: "/web-6.webp",
+    image: "web/web-6.webp",
   },
 ];
 
