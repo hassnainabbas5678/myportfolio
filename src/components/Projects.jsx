@@ -5,32 +5,37 @@ const webProjects = [
   {
     title: "Software House Website",
     description:
-      "Software house website built using html, css, javascript, and bootstrap",
+      "A modern software house website built with HTML, CSS, JavaScript, and Bootstrap, featuring a clean UI, responsive layout, and well-structured service sections.",
     image: "web/web-1.webp",
   },
   {
     title: "Portfolio Website",
-    description: "Responsive landing page for a startup.",
+    description:
+      "A fully responsive personal portfolio website designed to showcase projects, skills, and experience with a clean and professional layout.",
     image: "web/web-2.webp",
   },
   {
-    title: "Dashboard Application",
-    description: "Admin dashboard with authentication and charts.",
+    title: "Rayban Website",
+    description:
+      "A product-focused website inspired by Ray-Ban, featuring a visually appealing design, smooth layout structure, and responsive product sections.",
     image: "web/web-3.webp",
   },
   {
-    title: "Dashboard Application",
-    description: "Admin dashboard with authentication and charts.",
+    title: "Netflix Clone",
+    description:
+      "A Netflix-inspired landing page replicating the original UI, including responsive layouts, modern styling, and structured content sections.",
     image: "web/web-4.webp",
   },
   {
-    title: "Dashboard Application",
-    description: "Admin dashboard with authentication and charts.",
+    title: "Fitness Website",
+    description:
+      "A fitness and gym website designed with a strong visual hierarchy, responsive design, and sections for programs, trainers, and membership plans.",
     image: "web/web-5.webp",
   },
   {
     title: "NGO Website",
-    description: "Admin dashboard with authentication and charts.",
+    description:
+      "A responsive NGO website focused on awareness and impact, featuring clean content sections, donation-focused design, and accessibility-friendly layout.",
     image: "web/web-6.webp",
   },
 ];
@@ -41,7 +46,6 @@ export default function Projects() {
   return (
     <section id="projects" className="relative py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
-
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
@@ -116,9 +120,7 @@ export default function Projects() {
                   <h4 className="text-lg font-semibold text-white mb-2">
                     {project.title}
                   </h4>
-                  <p className="text-gray-300 text-sm">
-                    {project.description}
-                  </p>
+                  <p className="text-gray-300 text-sm">{project.description}</p>
                 </div>
               </div>
             ))}
