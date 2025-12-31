@@ -19,14 +19,10 @@ export default function Navbar({ scrolled }) {
           
           {/* Logo */}
           <div className="flex items-center space-x-2 group cursor-pointer">
-            <img
-              src="/logo.png"
-              alt="Hasnain Abbas"
-              className="w-7 h-7 sm:w-9 sm:h-9 transition-transform duration-300 group-hover:scale-110"
-            />
+            
             <span className="text-lg sm:text-xl md:text-2xl font-semibold tracking-wide">
               <span className="text-white">Hasnain</span>
-              <span className="text-blue-400">Abbas</span>
+              <span className="text-blue-400"> Abbas</span>
             </span>
           </div>
 
