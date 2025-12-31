@@ -116,14 +116,14 @@ export default function Hero() {
               digital experiences that blend performance with creativity.
             </p>
 
-            <button
+            <a href="#projects"><button
               className="relative px-10 py-4 rounded-lg font-semibold text-white
               bg-gradient-to-r from-blue-500 to-cyan-500
               transition-all duration-300
-              hover:shadow-[0_0_35px_rgba(59,130,246,0.9)]"
+              hover:shadow-[0_0_35px_rgba(59,130,246,0.9)]" 
             >
-              Download CV
-            </button>
+              My Projects
+            </button></a>
           </div>
 
           {/* RIGHT */}
