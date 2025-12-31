@@ -1,25 +1,37 @@
 import { useState } from "react";
-import { ExternalLink, Code, Palette } from "lucide-react";
+import { Code, Palette } from "lucide-react";
 
 const webProjects = [
   {
     title: "Software House Website",
     description:
-      "Software house website built using html,css,javascript, and bootstrap",
+      "Software house website built using html, css, javascript, and bootstrap",
     image: "/web-1.webp",
-    liveUrl: "https://fasttechcom.netlify.app/",
   },
   {
-    title: "Business Landing Page",
+    title: "Portfolio Website",
     description: "Responsive landing page for a startup.",
-    image: "/projects/landing.png",
-    liveUrl: "",
+    image: "/web-2.webp",
   },
   {
     title: "Dashboard Application",
     description: "Admin dashboard with authentication and charts.",
-    image: "/projects/dashboard.png",
-    liveUrl: "",
+    image: "/web-3.webp",
+  },
+  {
+    title: "Dashboard Application",
+    description: "Admin dashboard with authentication and charts.",
+    image: "/web-4.webp",
+  },
+  {
+    title: "Dashboard Application",
+    description: "Admin dashboard with authentication and charts.",
+    image: "/web-5.webp",
+  },
+  {
+    title: "NGO Website",
+    description: "Admin dashboard with authentication and charts.",
+    image: "/web-6.webp",
   },
 ];
 
@@ -29,6 +41,7 @@ export default function Projects() {
   return (
     <section id="projects" className="relative py-20 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
+
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
@@ -88,8 +101,7 @@ export default function Projects() {
                   hover:shadow-[0_20px_40px_rgba(34,211,238,0.15)]
                 "
               >
-                {/* Image */}
-                {/* Image */}
+                {/* Image Only */}
                 <div className="relative h-44 overflow-hidden">
                   <img
                     src={project.image}
@@ -97,32 +109,6 @@ export default function Projects() {
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-
-                  {/* Hover Action (Desktop) */}
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="
-        flex items-center gap-2
-        px-4 py-2 rounded-lg
-        bg-gradient-to-r from-blue-500 to-cyan-500
-        text-white font-semibold
-        scale-90 opacity-0
-        group-hover:scale-100 group-hover:opacity-100
-        transition-all duration-300
-      "
-                    >
-                      Open Live
-                      <ExternalLink size={18} />
-                    </a>
-                  </div>
-                </div>
-
-                {/* Mobile Hint */}
-                <div className="block sm:hidden text-center text-xs text-cyan-400 py-2">
-                  Tap image to open live website
                 </div>
 
                 {/* Content */}
@@ -130,14 +116,16 @@ export default function Projects() {
                   <h4 className="text-lg font-semibold text-white mb-2">
                     {project.title}
                   </h4>
-                  <p className="text-gray-300 text-sm">{project.description}</p>
+                  <p className="text-gray-300 text-sm">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         )}
 
-        {/* GRAPHIC DESIGNING — WORK IN PROGRESS */}
+        {/* GRAPHIC DESIGNING */}
         {activeTab === "graphic" && (
           <div className="flex justify-center">
             <div className="max-w-2xl w-full bg-white/5 border border-white/10 rounded-2xl p-8 sm:p-10 text-center">
@@ -150,10 +138,6 @@ export default function Projects() {
                 showcasing branding, creative design, and 3D modeling.
               </p>
             </div>
-
-            {/*
-            // Graphic Designing cards will be added here later
-            */}
           </div>
         )}
       </div>
