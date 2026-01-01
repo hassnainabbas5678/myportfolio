@@ -18,7 +18,7 @@ const skills = {
   ],
   tools: [
     { name: "Git", level: 100, color: "from-orange-400 to-orange-600" },
-    { name: "WordPress", level: 60, color: "from-blue-400 to-blue-600" },
+    { name: "WordPress", level: 0, color: "from-blue-400 to-blue-600" },
     { name: "Figma", level: 100, color: "from-pink-400 to-pink-600" },
     { name: "Netlify", level: 100, color: "from-teal-400 to-teal-600" },
     { name: "Database Design", level: 90, color: "from-sky-400 to-sky-600" },
